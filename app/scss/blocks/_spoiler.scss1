@@ -1,0 +1,18 @@
+//spoiler
+.spoiler {
+	&-btn {
+		width: 150px;
+	}
+	&-body {
+		margin: 0;
+		max-height: 0;
+		overflow: hidden;
+		transition: 0.2s linear;
+		will-change: max-height;
+		li {
+			padding: 5px 10px;
+		}
+	}
+}
+
+// spoiler

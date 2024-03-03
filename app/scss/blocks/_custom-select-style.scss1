@@ -1,0 +1,79 @@
+// custom select
+button {
+	text-align: left;
+	font-size: inherit;
+	font-weight: inherit;
+	font-family: inherit;
+}
+.select-wrap {
+	margin-bottom: 10px;
+}
+.custom-select {
+	border: 1px solid black;
+	border-radius: 6px;
+}
+
+.custom-select__header {
+	padding: 5px;
+	background-color: #fff;
+	cursor: pointer;
+	border: 0;
+	width: 100%;
+	background-color: transparent;
+	position: relative;
+}
+.custom-select__header::before,
+.custom-select__header::after {
+	content: "";
+	width: 15px;
+	height: 1px;
+	background-color: rgb(0, 0, 0);
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	transition: 0.2s ease-in-out;
+}
+.custom-select__header::before {
+	transform: rotate(-45deg);
+	right: 0;
+}
+.custom-select__header::after {
+	transform: rotate(45deg);
+	right: 10px;
+}
+.custom-select__header.open::before {
+	transform: rotate(45deg);
+}
+.custom-select__header.open::after {
+	transform: rotate(-45deg);
+}
+.custom-select__header.open {
+	border-bottom: 1px solid black;
+}
+.custom-select__content {
+	max-height: 0;
+	overflow: hidden;
+	box-sizing: content-box;
+	will-change: max-height;
+	transition: 0.2s linear;
+}
+.custom-select__content button {
+	width: 100%;
+	background-color: transparent;
+	text-align: left;
+	font-size: inherit;
+	border: 0;
+	font-weight: inherit;
+	font-family: inherit;
+}
+
+.custom-select__item {
+	padding: 5px;
+	cursor: pointer;
+	transition: 0.5s ease 0s;
+}
+.custom-select__item:hover {
+	background-color: #e8e8e8;
+}
+
+// custom select

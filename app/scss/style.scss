@@ -1,0 +1,62 @@
+@import "./blocks/*.scss";
+// @import "../../node_modules/swiper/swiper-bundle.min";
+
+[class*="__container"] {
+	max-width: 1880px;
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "arial";
+	font-size: 17px;
+	font-weight: 400;
+}
+ul,
+li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+button {
+	width: 100%;
+	background-color: transparent;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+	font-weight: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	margin: 0;
+	padding: 0;
+	color: inherit;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+	-webkit-appearance: none;
+}

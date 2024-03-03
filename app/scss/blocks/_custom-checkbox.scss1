@@ -1,0 +1,31 @@
+.checkbox {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	cursor: pointer;
+	// .checkbox__input
+
+	&__input {
+		position: absolute;
+		left: 0;
+		top: 0;
+		pointer-events: none;
+		opacity: 0;
+		z-index: -1;
+		// display: none;
+
+		&:checked {
+			+ .checkbox__decor {
+				background-color: red;
+			}
+		}
+	}
+
+	&__decor {
+		display: block;
+		width: 8px;
+		height: 8px;
+		border: 1px solid #000;
+	}
+}
