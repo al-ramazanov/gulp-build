@@ -101,6 +101,7 @@ function styles() {
     .pipe(sourceMaps.init())
     .pipe(sassGlob())
     .pipe(replace(/@images\//g, "../images/"))
+    .pipe(dest("dist/scss"))
     .pipe(sass())
     .pipe(sourceMaps.write())
     .pipe(dest("./dist/css/"))
